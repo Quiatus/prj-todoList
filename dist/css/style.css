@@ -92,6 +92,46 @@ section {
 
 .listContainer {
   min-height: 60vh;
+  padding: 0.75rem;
+}
+.listContainer .listTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid lightgray;
+}
+.listContainer .listTitle button {
+  font-size: 1rem;
+  background-color: #9f6060;
+  padding: 0 0.1rem;
+}
+@media only screen and (min-width: 768px) {
+  .listContainer .listTitle button {
+    padding: 0 0.5rem;
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+}
+.item input[type=checkbox] {
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+.item input[type=checkbox]:focus + label {
+  text-decoration: underline;
+}
+.item label {
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
